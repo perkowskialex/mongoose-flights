@@ -1,8 +1,22 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: navy;
+  color: goldenrod;
+}
+
+nav {
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 0%;
 }
 
 a {
-  color: #00B7FF;
+  color: coral;
 }
