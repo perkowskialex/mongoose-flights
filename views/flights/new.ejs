@@ -2,6 +2,7 @@
 
 <body>
   <h2>Select your Flight</h2>
+  <div class = 'flight-select'>
   <form action="/flights" method="POST">
     <label>Airport:
       <select name="airport">
@@ -11,6 +12,7 @@
         <option value="SEA">Seattle</option>
         <option value="DAL">Dallas</option>
       </select>
+    </label>
     <label>Airline:
       <select name="airline">
         <option value="American">American</option>
@@ -24,8 +26,9 @@
     <label>Departure Date
       <input type="datetime-local" name="departs">
     </label><br>
-    <input type="submit" value="Select Flight">
+    <label><input type="submit" value="Select Flight"></label>
   </form>
+</div>
 </body>
 
 </html>
