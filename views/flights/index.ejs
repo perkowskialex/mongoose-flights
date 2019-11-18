@@ -1,6 +1,7 @@
 <%- include('../partials/header')%>
 
 <body>
+    <div class = 'flight-info'>
     <h2>Flight List</h2>
     <table>
         <thead>
@@ -8,9 +9,10 @@
             <th>Airline:</th>
             <th>Flight Number:</th>
             <th>Departure Time:</th>
+            <th>More Information:</th>
         </thead>
-        <tbody>
         <% flights.forEach(function(flight) {%>
+        <tbody>
         <tr>
                 <td><%= flight.airport %></td>
                 <td><%= flight.airline %></td>
@@ -21,6 +23,7 @@
         <%})%>
     </tbody>
     </table>
+</div>
 </body>
 
 </html>

@@ -4,15 +4,36 @@
 }
 
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: pink;
-  color: darkblue;
-  justify-items: center;
+  background-color: seagreen;
+  color: mistyrose;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 1%
+}
+
+.flight-info{
+  background-color: seagreen;
+  justify-content: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+table, tr, td, th {
+  border: 1px solid mistyrose;
+  font-size: 16px;
 }
 
 header { 
-  background-color: mistyrose;
+  background-color: gainsboro;
 }
 
 nav {
@@ -20,8 +41,10 @@ nav {
   display: flex;
   justify-content: space-evenly;
   padding: 5% 0%;
+  border: 1px solid black;
+  flex-direction: row;
 }
 
 a {
-  color: coral;
+  color: orange;
 }
