@@ -6,9 +6,13 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: navy;
-  color: goldenrod;
+  background-color: pink;
+  color: darkblue;
   justify-items: center;
+}
+
+header { 
+  background-color: mistyrose;
 }
 
 nav {

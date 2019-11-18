@@ -1,6 +1,7 @@
 <%- include('../partials/header')%>
 
 <section id="show-page">
+  <h1>Flight Information</h1>
         <table>
           <thead>
             <th>Airport:</th>
@@ -17,3 +18,41 @@
             </tbody>
         </table>
       </section>
+
+<br><br><h2>Destination</h2>
+<form id="add-review-form" method="POST"
+action="/flights/<%= flight._id %>/destinations">
+<label>Arrival Date:</label>
+<input type="datetime-local" name="arrival">
+<label>Destination Airport:</label>
+  <select name="airport">
+    <option value="SAN">San Diego</option>
+    <option value="AUS">Austin</option>
+    <option value="LAX">Los Angeles</option>
+    <option value="SEA">Seattle</option>
+    <option value="DAL">Dallas</option>
+  </select>
+<input type="submit" value="Add Arrival">
+</form>
+
+<% if (flight.destinations.length) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>Airport</th>
+        <th>Arrival Time:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% flight.destinations.forEach(function(f) { %>
+        <tr>
+          <td><%= f.airport %></td>
+          <td><%= f.arrival %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+<% } else { %>
+  <h5><%=flight.destinations.airport%> --- Arrival Time TBD</h5>
+<% } %>
+  

@@ -28,8 +28,8 @@ let flightSchema = new Schema({
             let today = new Date();
             return new Date(today.setFullYear(today.getFullYear()+1));
         },
-    destinations: [destinationSchema]
     },
+    destinations: [destinationSchema],
     airport: {
         type: String,
         enum: ['AUS','DAL','LAX','SAN', 'SEA'],
