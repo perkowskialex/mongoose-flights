@@ -4,7 +4,7 @@ let Schema = mongoose.Schema;
 let destinationSchema = new Schema({
     airport: {
         type: String,
-        enum: ['AUS','DAL','LAX','SD']
+        enum: ['AUS','DAL','LAX','SAN', 'SEA']
     },
     arrival: {
         type: Date
@@ -30,6 +30,11 @@ let flightSchema = new Schema({
         },
     destinations: [destinationSchema]
     },
+    airport: {
+        type: String,
+        enum: ['AUS','DAL','LAX','SAN', 'SEA'],
+        default: 'SAN'
+    }
 });
 
 module.exports = mongoose.model('Flight', flightSchema)
