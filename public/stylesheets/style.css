@@ -8,6 +8,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: navy;
   color: goldenrod;
+  justify-items: center;
 }
 
 nav {

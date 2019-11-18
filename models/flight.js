@@ -12,7 +12,7 @@ let flightSchema = new Schema({
         min: 10,
         max: 9999
     },
-    departs: {
+    departs: { 
         type: Date,
         default: function() {
             let today = new Date();
