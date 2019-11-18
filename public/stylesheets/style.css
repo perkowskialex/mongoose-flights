@@ -4,16 +4,18 @@
 }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Cinzel', serif;
+  font-size: 35px;
   background-color: seagreen;
   color: mistyrose;
   justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 50px;
   display: flex;
   justify-content: center;
   margin: 3%
@@ -22,8 +24,8 @@ h2 {
 .flight-info {
   background-color: seagreen;
   justify-content: center;
-  border: 1px solid black;
   display: flex;
+  width: 90%;
   flex-direction: column;
 }
 
@@ -33,7 +35,7 @@ label {
   align-items: center;
   justify-items: center;
   margin: .5em;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 select, input {
@@ -44,7 +46,17 @@ select, input {
 
 table, tr, td, th {
   border: 1px solid mistyrose;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+th {
+  font-weight: bolder;
+}
+
+tr, td, th {
+  padding: 0.5%;
+  text-align: center;
 }
 
 header { 
@@ -52,12 +64,11 @@ header {
 }
 
 nav {
-  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: space-evenly;
   padding: 5% 0%;
-  border: 1px solid black;
   flex-direction: row;
+  width: 100vw;
 }
 
 a {
