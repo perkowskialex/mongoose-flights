@@ -19,13 +19,15 @@
     <h2>Flight List</h2>
     <table>
         <thead>
-            <th>Airline</th>
-            <th>Flight Number</th>
-            <th>Departs:</th>
+            <th>Airport:</th>
+            <th>Airline:</th>
+            <th>Flight Number:</th>
+            <th>Departure Time:</th>
         </thead>
         <tbody>
         <% flights.forEach(function(flight) {%>
         <tr>
+                <td><%= flight.airport %></td>
                 <td><%= flight.airline %></td>
                 <td><%= flight.flightNo %></td>
                 <td><%= flight.departs %></td>
