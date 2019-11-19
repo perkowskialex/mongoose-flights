@@ -51,14 +51,15 @@ select, input {
   color: darkslateblue;
 }
 
-table, tr, td, th {
-  border: 1px solid mistyrose;
-  font-size: 18px;
+tr, td, th {
+  border: .5px solid mistyrose;
+  font-size: 16px;
   font-weight: bold;
 }
 
 th {
   font-weight: bolder;
+  font-size: 20px;
 }
 
 tr, td, th {
