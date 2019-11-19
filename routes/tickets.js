@@ -1,5 +1,7 @@
 let express = require('express');
 let router = express.Router();
-let ticketsCtrl = ('../controllers/tickets');
+let ticketsCtrl = require('../controllers/tickets');
 
-router.post('/flights/:id/tickets', ticketsCtrl)
+router.get('/flights/:id/tickets/new', ticketsCtrl.new);
+
+module.exports = router;
