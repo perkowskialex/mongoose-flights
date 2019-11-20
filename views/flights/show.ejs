@@ -55,7 +55,7 @@
         <td><%= ticket.price%></td>
         <td><form action="/flights/<%=flight._id%>/tickets/<%=ticket._id%>?_method=DELETE"
           class="delete-form" method="POST">
-          <button type="submit">X</button>
+          <button type="submit" class = 'danger'>X</button>
         </form></td>
       </tr>
       <% }) %>
@@ -63,7 +63,9 @@
   </table>
 </div>
 
-<h2>Select Destination</h2>
+<span class = 'Inputs'>
+
+<span class = 'Destinations'>
 <form id="add-review-form" method="POST" action="/flights/<%= flight._id %>/destinations">
   <label>Arrival Date:</label>
   <input type="datetime-local" name="arrival">
@@ -77,5 +79,7 @@
   </select>
   <input type="submit" value="Add Arrival">
 </form>
+</span>
 
-<a href="/flights/<%=flight._id%>/tickets/new">Add Ticket</a></button>
+<span class = 'ticket-add'><a href="/flights/<%=flight._id%>/tickets/new">Purchase Ticket</a></button></span>
+</span>

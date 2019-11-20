@@ -92,3 +92,31 @@ a {
   color: darkslateblue;
   font-weight: bold;
 }
+
+.danger {
+  color: whitesmoke;
+  background-color: red;
+  border-radius: 2px;
+}
+
+
+.Inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Destinations {
+  display: flex;
+  grid-column: 0/1;
+}
+
+.ticket-add {
+  color: whitesmoke;
+  padding: 1%;
+  border-radius: 10px;
+  grid-column: 3/3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
