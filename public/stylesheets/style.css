@@ -6,7 +6,7 @@
 body {
   font-family: 'Cinzel', serif;
   font-size: 35px;
-  background-color: seagreen;
+  background-color: thistle;
   color: darkslateblue;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@ h5 {
 }
 
 .flight-info {
-  background-color: seagreen;
+  background-color: thistle;
   justify-content: center;
   display: flex;
   width: 90%;
@@ -51,8 +51,9 @@ select, input {
   color: darkslateblue;
 }
 
+
 tr, td, th {
-  border: .5px solid mistyrose;
+  border: .5px solid seagreen;
   font-size: 16px;
   font-weight: bold;
 }
@@ -119,4 +120,8 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+.details {
+  color: white;
 }
