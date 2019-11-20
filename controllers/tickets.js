@@ -18,9 +18,10 @@ function create(req,res) {
 }
 
 function deleteTicket(req,res) {
-    // flightId = Ticket.find({flight:flight._id});
-    Ticket.findByIdAndDelete(req.params.id, function(err, flight){
-        console.log(`deleting ${req.params.id}`)
-        res.redirect(`/flights/`);
+    Ticket.findById(req.params.id).populate('Flight').exec(function(err,ticket){
+        let flightId = ticket.flight
+        Ticket.findByIdAndDelete(req.params.id, function(err, flight){
+            res.redirect(`/flights/${flightId}`)
         });
+    });
 }
