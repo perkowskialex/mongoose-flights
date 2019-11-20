@@ -14,7 +14,7 @@ body {
   flex-direction: column;
 }
 
-h1, h2, h5 {
+h1, h2 {
   font-size: 48px;
   display: flex;
   justify-content: center;
@@ -22,7 +22,9 @@ h1, h2, h5 {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 .flight-info {
@@ -31,6 +33,7 @@ h5 {
   display: flex;
   width: 90%;
   flex-direction: column;
+  padding: 1% 0% 5% 0%;
 }
 
 label {
@@ -44,7 +47,7 @@ label {
 
 select, input {
   width: 100%;
-  background-color: mistyrose;
+  background-color: whitesmoke;
   border-radius: 5px;
   font-family: 'Cinzel', 'serif';
   font-weight: bold;
@@ -96,8 +99,10 @@ a {
 
 .danger {
   color: whitesmoke;
-  background-color: red;
+  background-color: darkslateblue;
+  border:1px solid palevioletred;
   border-radius: 2px;
+  width: 100%;
 }
 
 
@@ -116,12 +121,50 @@ a {
   color: whitesmoke;
   padding: 1%;
   border-radius: 10px;
-  grid-column: 3/3;
+  grid-column: 2/2;
   display: flex;
   align-items: center;
   text-align: center;
 }
 
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  grid-column: 3/3
+}
+
 .details {
   color: white;
+}
+
+table {
+  width: 100%;
+}
+
+button {
+  color: thistle;
+  background-color: darkslateblue;
+  width: 100%;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+}
+
+#add-ticket-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#add-ticket-form > label {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#add-ticket-form > button {
+  grid-column: 1/3;
+  grid-row: 3/4; 
+  font-size: 20px;
+  border: 1px solid seagreen;
+  border-radius: 10px;
 }
