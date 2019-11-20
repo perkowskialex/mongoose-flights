@@ -31,13 +31,17 @@ h5 {
   justify-content: center;
 }
 
-.flight-info {
+.flight-info, .flight-details {
   background-color: thistle;
   justify-content: center;
   display: flex;
   width: 90%;
   flex-direction: column;
   padding: 1% 0% 5% 0%;
+}
+
+.flight-details > table {
+  padding: 1%;
 }
 
 label {
@@ -96,6 +100,10 @@ nav {
   background-size: 80px 140px;
 }
 
+nav > a:hover {
+  color: slateblue;
+}
+
 a {
   color: darkslateblue;
   font-weight: bold;
@@ -104,9 +112,13 @@ a {
 .danger {
   color: whitesmoke;
   background-color: darkslateblue;
-  border:1px solid palevioletred;
+  border:1px solid whitesmoke;
   border-radius: 2px;
   width: 100%;
+}
+
+.danger:hover{
+  background-color: palevioletred;
 }
 
 
@@ -119,16 +131,20 @@ a {
 .Destinations {
   display: flex;
   grid-column: 0/1;
+  align-items: center;
+  justify-content: center;
 }
 
 .ticket-add {
-  color: whitesmoke;
-  padding: 1%;
+  padding: 5%;
   border-radius: 10px;
   grid-column: 2/2;
   display: flex;
   align-items: center;
   text-align: center;
+}
+.ticket-add > a:hover {
+  color: slateblue;
 }
 
 .ticket-list {
@@ -139,6 +155,10 @@ a {
 
 .details {
   background-color: rgba(255, 255, 255, 0.5)
+}
+
+.details:hover {
+  background-color: whitesmoke;
 }
 
 table {
@@ -153,6 +173,10 @@ button {
   font-weight: bold;
 }
 
+button:hover {
+  background-color: slateblue;
+}
+
 #add-ticket-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -163,6 +187,7 @@ button {
   width: 50%;
   display: flex;
   align-items: center;
+  justify-self: center;
 }
 
 #add-ticket-form > button {
@@ -176,7 +201,7 @@ button {
 .flight-select {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr ;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
 }
@@ -186,19 +211,24 @@ button {
 }
 
 .flight-select > #flightNo{
-  grid-column: 0/2;
-  grid-row: 2/2;
+  grid-column: 3/3;
+  grid-row: 1/1;
   display: flex;
 }
 
 .flight-select > #departs {
-  grid-column: 0/2;
-  grid-row: 3/3;
+  grid-column: 2/2;
+  grid-row: 2/3;
 }
 
 .flight-select > #submit-flight {
   width: 100%;
   grid-row: 4/4;
-  grid-column: 0/2;
+  grid-column: 2/2;
   display: flex;
+}
+
+#submit-destination:hover {
+  background-color: darkslateblue;
+  color: whitesmoke
 }

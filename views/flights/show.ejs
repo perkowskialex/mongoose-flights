@@ -1,6 +1,6 @@
 <%- include('../partials/header')%>
 
-<div class='flight-info'>
+<div class='flight-details'>
   <section id="show-page">
     <h1>Flight Information</h1>
     <table>
@@ -58,7 +58,7 @@
     <option value="SEA">Seattle</option>
     <option value="DAL">Dallas</option>
   </select>
-  <input type="submit" value="Add Arrival">
+  <input type="submit" id = "submit-destination" value="Add Arrival">
 </form>
 </span>
 
@@ -75,7 +75,7 @@
           <% tickets.forEach(function(ticket,idx){%>
           <tr>
             <td><%= ticket.seat%></td>  
-            <td><%= ticket.price%></td>
+            <td>$<%= ticket.price%></td>
             <td><form action="/flights/<%=flight._id%>/tickets/<%=ticket._id%>?_method=DELETE"
               class="delete-form" method="POST">
               <button type="submit" class = 'danger'>X</button>
